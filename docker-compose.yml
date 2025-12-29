@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  nextjs:
+    build: ./nextjs
+    container_name: nextjs-app
+    restart: always
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - nextjs
