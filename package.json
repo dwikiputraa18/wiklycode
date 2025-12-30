@@ -11,6 +11,7 @@
   "dependencies": {
     "@heroui/navbar": "^2.2.27",
     "@heroui/react": "^2.8.7",
+    "framer-motion": "^12.23.26",
     "gsap": "^3.14.2",
     "next": "16.1.1",
     "react": "19.2.3",
